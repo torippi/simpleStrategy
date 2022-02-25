@@ -14,6 +14,12 @@
 		2DDFBA3B279C54CA00F78A4B /* simpleStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFBA3A279C54CA00F78A4B /* simpleStrategyTests.swift */; };
 		2DDFBA45279C54CA00F78A4B /* simpleStrategyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFBA44279C54CA00F78A4B /* simpleStrategyUITests.swift */; };
 		2DDFBA47279C54CA00F78A4B /* simpleStrategyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFBA46279C54CA00F78A4B /* simpleStrategyUITestsLaunchTests.swift */; };
+		2DDFBA54279C69F100F78A4B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFBA53279C69F100F78A4B /* SwiftUIView.swift */; };
+		2DDFBA56279C6AA200F78A4B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFBA55279C6AA200F78A4B /* MapView.swift */; };
+		2DDFBA58279D469B00F78A4B /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFBA57279D469B00F78A4B /* landmarkData.json */; };
+		2DDFBA5A279D46EF00F78A4B /* LandMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFBA59279D46EF00F78A4B /* LandMark.swift */; };
+		2DDFBA5C279D485C00F78A4B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFBA5B279D485C00F78A4B /* ModelData.swift */; };
+		2DDFBA61279DAAF500F78A4B /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFBA60279DAAF500F78A4B /* LandmarkRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		2DDFBA40279C54CA00F78A4B /* simpleStrategyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleStrategyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDFBA44279C54CA00F78A4B /* simpleStrategyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleStrategyUITests.swift; sourceTree = "<group>"; };
 		2DDFBA46279C54CA00F78A4B /* simpleStrategyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleStrategyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2DDFBA53279C69F100F78A4B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		2DDFBA55279C6AA200F78A4B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2DDFBA57279D469B00F78A4B /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		2DDFBA59279D46EF00F78A4B /* LandMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMark.swift; sourceTree = "<group>"; };
+		2DDFBA5B279D485C00F78A4B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		2DDFBA60279DAAF500F78A4B /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +106,10 @@
 		2DDFBA28279C54C500F78A4B /* simpleStrategy */ = {
 			isa = PBXGroup;
 			children = (
+				2DDFBA5F279DAA8000F78A4B /* Resources */,
+				2DDFBA5E279DAA0900F78A4B /* Model */,
+				2DDFBA5D279DA9C900F78A4B /* Views */,
 				2DDFBA29279C54C500F78A4B /* simpleStrategyApp.swift */,
-				2DDFBA2B279C54C500F78A4B /* ContentView.swift */,
 				2DDFBA2D279C54C900F78A4B /* Assets.xcassets */,
 				2DDFBA2F279C54C900F78A4B /* Preview Content */,
 			);
@@ -125,6 +139,34 @@
 				2DDFBA46279C54CA00F78A4B /* simpleStrategyUITestsLaunchTests.swift */,
 			);
 			path = simpleStrategyUITests;
+			sourceTree = "<group>";
+		};
+		2DDFBA5D279DA9C900F78A4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2DDFBA60279DAAF500F78A4B /* LandmarkRow.swift */,
+				2DDFBA55279C6AA200F78A4B /* MapView.swift */,
+				2DDFBA53279C69F100F78A4B /* SwiftUIView.swift */,
+				2DDFBA2B279C54C500F78A4B /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2DDFBA5E279DAA0900F78A4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DDFBA5B279D485C00F78A4B /* ModelData.swift */,
+				2DDFBA59279D46EF00F78A4B /* LandMark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DDFBA5F279DAA8000F78A4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DDFBA57279D469B00F78A4B /* landmarkData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +275,7 @@
 			files = (
 				2DDFBA31279C54C900F78A4B /* Preview Assets.xcassets in Resources */,
 				2DDFBA2E279C54C900F78A4B /* Assets.xcassets in Resources */,
+				2DDFBA58279D469B00F78A4B /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DDFBA2C279C54C500F78A4B /* ContentView.swift in Sources */,
+				2DDFBA5A279D46EF00F78A4B /* LandMark.swift in Sources */,
+				2DDFBA56279C6AA200F78A4B /* MapView.swift in Sources */,
 				2DDFBA2A279C54C500F78A4B /* simpleStrategyApp.swift in Sources */,
+				2DDFBA54279C69F100F78A4B /* SwiftUIView.swift in Sources */,
+				2DDFBA61279DAAF500F78A4B /* LandmarkRow.swift in Sources */,
+				2DDFBA5C279D485C00F78A4B /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"simpleStrategy/Preview Content\"";
+				DEVELOPMENT_TEAM = DNXJT2G38X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -447,6 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"simpleStrategy/Preview Content\"";
+				DEVELOPMENT_TEAM = DNXJT2G38X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
